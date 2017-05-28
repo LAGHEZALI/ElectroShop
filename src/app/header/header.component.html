@@ -1,0 +1,49 @@
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-indigo w3-card-2 w3-animate-right w3-center w3-xlarge" style="display:none;right:0;z-index:5" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-teal w3-xxlarge"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Overlay -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    
+    <!-- NavBar -->
+    <div class="w3-top" >
+        <div class="w3-bar w3-border w3-teal w3-large w3-card-4" >
+            <a href="#" class="w3-bar-item w3-button w3-indigo w3-padding-16"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Link 1</a>
+            <div class="w3-dropdown-click ">
+                <button class="w3-button w3-padding-16 w3-hide-small" ng-click="openDropdown();">Dropdown   <i class="fa fa-caret-down"></i></button>
+                <div id="dropdown-content" class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 3</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 4</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Link 5</a>
+            
+            <span href="#" class="w3-bar-item w3-button w3-indigo w3-right w3-padding-16 w3-hide-small" onclick="w3_open()" ><i class="fa fa-shopping-basket"></i></span>
+            <span href="#" class="w3-bar-item w3-button w3-indigo w3-right w3-padding-16 w3-hide-small"><i class="fa fa-search"></i></span>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-padding-16 " onclick="myFunction()">&#9776;</a>            
+        </div>
+
+        <div id="demo" class="w3-bar w3-border w3-teal w3-large w3-card-4 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-padding-16 ">Link 1</a>
+            <div class="w3-dropdown-click ">
+                <button class="w3-button w3-padding-16 w3-mobile" onclick="openDropdown()">Dropdown &nbsp&nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                <div id="dropdown-content" class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 3</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 4</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Link 5</a>
+            
+            <span href="#" class="w3-bar-item w3-button w3-indigo w3-right w3-padding-16 w3-mobile" onclick="w3_open()" ><i class="fa fa-shopping-basket"></i></span>
+            <span href="#" class="w3-bar-item w3-button w3-indigo w3-right w3-padding-16 w3-mobile"><i class="fa fa-search"></i></span>
+        </div>
+
+    </div>     
+    
